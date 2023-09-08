@@ -294,7 +294,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin{
                             children: [
                               Padding(
                                 padding: const EdgeInsets.all(4.0),
-                                child: Text("$data[0]",style: TextStyle(
+                                child: Text("Karthi",style: TextStyle(
                                   fontSize: 30,color: whi
                                 )),
                               ),

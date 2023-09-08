@@ -1,6 +1,4 @@
 
-import 'package:battlevids/ddss.dart';
-import 'package:battlevids/search.dart';
 import 'package:battlevids/splashscreen.dart';
 import 'package:battlevids/theme.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +27,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'BattleVids',
       theme: Provider.of<ThemeNotifier>(context).currentTheme,
       builder: (context, child) =>
           ResponsiveWrapper.builder(
@@ -40,10 +38,10 @@ class _MyAppState extends State<MyApp> {
             breakpoints: [
               ResponsiveBreakpoint.resize(450, name: MOBILE),
               ResponsiveBreakpoint.autoScale(450, name: MOBILE),
-              ResponsiveBreakpoint.autoScale(450, name: TABLET),
-              ResponsiveBreakpoint.resize(450, name: TABLET),
-              ResponsiveBreakpoint.resize(450, name: DESKTOP),
-              ResponsiveBreakpoint.autoScale(450, name: DESKTOP),
+              ResponsiveBreakpoint.autoScale(600, name: TABLET),
+              ResponsiveBreakpoint.resize(600, name: TABLET),
+              ResponsiveBreakpoint.resize(1080, name: DESKTOP),
+              ResponsiveBreakpoint.autoScale(1080, name: DESKTOP),
             ],
           ),
       home: Splash(),
