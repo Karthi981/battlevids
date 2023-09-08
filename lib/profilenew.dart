@@ -1,4 +1,6 @@
 
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:image_picker_gallery_camera/image_picker_gallery_camera.dart';
 import 'package:page_transition/page_transition.dart';
@@ -122,7 +124,7 @@ class _OttproState extends State<Ottpro> {
                     child: Center(
                       child: ClipOval(
                        child:SizedBox.fromSize(size: Size.fromRadius(100),
-                        child: _image!=null ?  Image.file(_image.path,fit: BoxFit.cover,) : Image(image: AssetImage("assets/profile.jpg"),fit:BoxFit.cover,),
+                        child: _image!=null ?  Image.file(File(_image.path),fit: BoxFit.cover,) : Image(image: AssetImage("assets/profile.jpg"),fit:BoxFit.cover,),
                       ),
                     ),
                   ),

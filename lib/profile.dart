@@ -1,5 +1,4 @@
 
-
 import 'package:battlevids/profilenew.dart';
 import 'package:battlevids/theme.dart';
 import 'package:flutter/material.dart';
@@ -371,7 +370,7 @@ class _ProfileState extends State<Profile> with SingleTickerProviderStateMixin{
                 ]
             ),
           ),
-    )
+    ),
       )
       );
   }

@@ -1,7 +1,6 @@
 
 
 import 'package:battlevids/bottom.dart';
-import 'package:battlevids/ott1.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -86,6 +85,15 @@ class _Ott1State extends State<Ott1> {
     ),
         Padding(padding: EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom )
         ),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text("You don't have to Sign Up.Since This App is a model\n\n"
+                "Created by Me.This only works as a Model\n As there is no videos in it\n\n"
+                "Just use any Sample email and hint text password" ,
+            style: TextStyle(color: Colors.white,fontSize: 20),),
+          ),
+        )
     ],
       ),
       );
@@ -167,6 +175,8 @@ class _Ott1State extends State<Ott1> {
                                   return null;
                                 },
                                 decoration: const InputDecoration(
+                                  hintText: 'example@gmail.com',
+                                  hintStyle: TextStyle(color: Colors.white),
                                   errorStyle: TextStyle(fontSize: 16),
                                   prefixIcon: Icon(Icons.person, color: Colors.white70),
                                   focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white70)),
@@ -196,6 +206,8 @@ class _Ott1State extends State<Ott1> {
                                   return null;
                                 },
                                 decoration: const InputDecoration(
+                                  hintText: 'Qwerty123',
+                                  hintStyle: TextStyle(color: Colors.white),
                                   errorStyle: TextStyle(fontSize: 16),
                                   focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.white70)),
                                   enabledBorder: OutlineInputBorder(

@@ -31,7 +31,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.gt.Battlevids"
+    namespace "com.gt.battlevids"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -72,6 +72,7 @@ android {
             signingConfig signingConfigs.release
         }
     }
+
 
 }
 
